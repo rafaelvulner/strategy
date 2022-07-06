@@ -1,22 +1,20 @@
 package com.example.solid;
 
-import com.example.solid.inteface.Salario;
+import com.example.solid.domain.Clt;
+import com.example.solid.domain.Pj;
 
 public class RH {
 
-
   private Double salario;
 
-  public RH(Salario salario){
+  public RH(Salario salario) {
 
-    //REMOVER ESSA REGRA E NÃO DIXAR O RH VISUALIZAR ESSE MÉTODO, APENAS EXIBIR O SALARIO
-    salario.calcularSalario();
+    this.salario = salario.exibirSalario();
+  }
 
-    this.salario = salario.mostraSalario();
-  };
-
-  public void exibir(){
+  public void exibir() {
     System.out.println("Salario: "+this.salario);
   }
+
 
 }

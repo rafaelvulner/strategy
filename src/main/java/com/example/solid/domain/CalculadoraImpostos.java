@@ -1,4 +1,4 @@
-package com.example.solid.domais;
+package com.example.solid.domain;
 
 public class CalculadoraImpostos {
 

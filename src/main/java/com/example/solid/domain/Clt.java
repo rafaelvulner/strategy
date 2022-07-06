@@ -1,6 +1,6 @@
-package com.example.solid.domais;
+package com.example.solid.domain;
 
-import com.example.solid.inteface.Salario;
+import com.example.solid.Salario;
 
 public class Clt implements Salario {
 
@@ -12,11 +12,11 @@ public class Clt implements Salario {
 
   @Override
   public void calcularSalario() {
-    this.salario = this.salario -  ((salario * 6 / 100) + (salario * 6 / 100));
+    this.salario = salario - ((salario * 8 / 100) + (salario * 6 / 100));
   }
 
   @Override
-  public Double mostraSalario() {
+  public Double exibirSalario() {
     return this.salario;
   }
 }
