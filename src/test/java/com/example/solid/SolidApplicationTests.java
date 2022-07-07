@@ -1,6 +1,7 @@
 package com.example.solid;
 
 import com.example.solid.domain.Clt;
+import com.example.solid.domain.Estagio;
 import com.example.solid.domain.Pj;
 import com.example.solid.domain.RH;
 import com.example.solid.impostos.CalculadoraImpostos;
@@ -21,14 +22,18 @@ class SolidApplicationTests {
 
         Salario clt = new Clt(1500.0);
         Salario pj = new Pj();
+        Salario estagio = new Estagio(800.0);
 
         RH salarioClt = new RH(clt);
         RH salarioPj = new RH(pj);
+        RH salarioEstagio = new RH(estagio);
 
         System.out.println("Salario CLT:");
         salarioClt.exibir();
         System.out.println("Salario PJ:");
         salarioPj.exibir();
+        System.out.println("Salario Estagio:");
+        salarioEstagio.exibir();
 
         System.out.println("--------- Calculadora Impostos ---------");
 

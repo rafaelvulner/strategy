@@ -3,7 +3,7 @@ package com.example.solid.impostos;
 import com.example.solid.interfaces.Imposto;
 
 public class Ipi implements Imposto {
-    public Double valor;
+    private Double valor;
 
     public Ipi(double valor) {
         this.valor = valor;
