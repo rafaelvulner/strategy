@@ -10,8 +10,6 @@ public class Estagio implements Salario {
         this.salario = salario;
     }
 
-    @Override
-    public void calcularSalario() { this.salario = salario; }
 
     @Override
     public Double mostraSalario() {

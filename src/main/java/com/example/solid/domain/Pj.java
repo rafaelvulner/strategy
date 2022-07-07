@@ -6,8 +6,7 @@ public class Pj implements Salario {
 
     private Double salario = 60.0;
 
-    @Override
-    public void calcularSalario() {
+    private void calcularSalario() {
         this.salario = this.salario * 168;
     }
 

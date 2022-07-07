@@ -10,8 +10,8 @@ public class Clt implements Salario {
         this.salario = salario;
     }
 
-    @Override
-    public void calcularSalario() {
+
+    private void calcularSalario() {
         this.salario = salario - ((salario * 8 / 100) + (salario * 6 / 100));
     }
 
