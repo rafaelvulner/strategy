@@ -1,6 +1,6 @@
 package com.example.solid.domain;
 
-import com.example.solid.Salario;
+import com.example.solid.interfaces.Salario;
 
 public class Pj implements Salario {
 
@@ -12,7 +12,8 @@ public class Pj implements Salario {
     }
 
     @Override
-    public Double exibirSalario() {
+    public Double mostraSalario() {
+        calcularSalario();
         return this.salario;
     }
 }
